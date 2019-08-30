@@ -35,7 +35,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = ['!help','Type !help',By iHamza SY];
+    var setGame = ['!help','Type !help,By iHamza SY #4998'];
     var i = -1;
     var j = 0;
     setInterval(function (){
