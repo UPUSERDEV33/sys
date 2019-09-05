@@ -35,7 +35,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = ['!help','Type !help','By : !           ~  ??'];
+    var setGame = ['Vonla The Best'];
     var i = -1;
     var j = 0;
     setInterval(function (){
@@ -306,7 +306,7 @@ client.on('message', function(msg) {
             .addField('``My ID``' , `[ ${client.user.id} ]` , true)
 			      .addField('``My Prefix``' , `[ ! ]` , true)
 			      .addField('``My Language``' , `[ Java Script ]` , true)
-			      .setFooter('By | 3bker')
+			      .setFooter('By | Loading')
     })
 }
 });
@@ -784,7 +784,7 @@ message.react("?")
  }}});
  client.on('message', message => {
   if(!message.channel.guild) return;
-if(message.content.startsWith('abc')) {
+if(message.content.startsWith('!bc')) {
 if(!message.channel.guild) return message.channel.send('**هذا الأمر فقط للسيرفرات**').then(m => m.delete(5000));
 if(!message.member.hasPermission('ADMINISTRATOR')) return      message.channel.send('**للأسف لا تمتلك صلاحية** `ADMINISTRATOR`' );
 let args = message.content.split(" ").join(" ").slice(2 + prefix.length);
@@ -834,8 +834,8 @@ let BcList = new Discord.RichEmbed()
 .setDescription(`برودكاست بـ امبد ??\nبرودكاست بدون امبد? \nلديك دقيقه للأختيار قبل الغاء البرودكاست`)
 if (!args) return message.reply('**يجب عليك كتابة كلمة او ??ملة لإرسال البرودكاست**');message.channel.send(BcList).then(msg => {
 msg.react('??')
-.then(() => msg.react('?'))
-.then(() =>msg.react('??'))
+.then(() => msg.react('✅'))
+.then(() =>msg.react('❎'))
  
 let EmbedBcFilter = (reaction, user) => reaction.emoji.name === '??' && user.id === message.author.id;
 let NormalBcFilter = (reaction, user) => reaction.emoji.name === '?' && user.id === message.author.id;
