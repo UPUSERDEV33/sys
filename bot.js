@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const devs = ['588088471848222770,511482057835282436'];
+const devs = ['588088471848222770'];
 const db = require('quick.db');
 const premium = ['610468985036603393']
 const client = new Discord.Client();   
@@ -35,7 +35,7 @@ var ti={}
 
 client.on('ready', function(){
     var ms = 60000 ;
-    var setGame = ['!help','Type !help,By iHamza SY #4998'];
+    var setGame = ['!help','Type !help','By : !           ~  ??'];
     var i = -1;
     var j = 0;
     setInterval(function (){
